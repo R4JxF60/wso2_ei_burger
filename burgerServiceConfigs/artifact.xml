@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="burgers" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/burgers.xml</file>
+    </artifact>
+    <artifact name="burgers_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/burgers_swagger.yaml</file>
+    </artifact>
+    <artifact name="burgers_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/burgers_metadata.yaml</file>
+    </artifact>
+    <artifact name="login" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/login.xml</file>
+    </artifact>
+    <artifact name="createProduct" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/createProduct.xml</file>
+    </artifact>
+    <artifact name="deleteProduct" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/deleteProduct.xml</file>
+    </artifact>
+    <artifact name="putOrder" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/putOrder.xml</file>
+    </artifact>
+    <artifact name="getAProduct" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getAProduct.xml</file>
+    </artifact>
+    <artifact name="getOrders" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getOrders.xml</file>
+    </artifact>
+    <artifact name="createOrder" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/createOrder.xml</file>
+    </artifact>
+</artifacts>

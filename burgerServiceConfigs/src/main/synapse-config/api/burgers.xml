@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/burgers" name="burgers" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/login">
+        <inSequence>
+            <log>
+                <property name="Message" value="Login Request : Admin Route"/>
+            </log>
+            <send>
+                <endpoint key="login"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/products">
+        <inSequence>
+            <log>
+                <property name="Message" value="Create Product Request : Admin Route"/>
+            </log>
+            <send>
+                <endpoint key="createProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="DELETE" url-mapping="/products">
+        <inSequence>
+            <log>
+                <property name="Message" value="Delete Product Request : Admin Route"/>
+            </log>
+            <send>
+                <endpoint key="deleteProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" url-mapping="/orders">
+        <inSequence>
+            <log>
+                <property name="Message" value="Update Order Requet : Admin Route"/>
+            </log>
+            <send>
+                <endpoint key="putOrder"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/products">
+        <inSequence>
+            <log>
+                <property name="Message" value="Get A Product : Common Routes"/>
+            </log>
+            <send>
+                <endpoint key="getAProduct"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/orders">
+        <inSequence>
+            <log>
+                <property name="Message" value="List Orders : Common Route"/>
+            </log>
+            <send>
+                <endpoint key="getOrders"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/orders">
+        <inSequence>
+            <log>
+                <property name="Message" value="Create Order : Customer Route"/>
+            </log>
+            <send/>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
